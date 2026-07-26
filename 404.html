@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knot Fun — a friend challenged you</title>
+<!-- iOS Smart App Banner: native "View in App Store" bar. Fill in the app ID. -->
+<meta name="apple-itunes-app" content="app-id=APP_STORE_ID">
+<style>
+  :root { --ink: #2b2118; --bg: #f6efe3; --accent: #e8623d; }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+    background: var(--bg); color: var(--ink);
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 24px; text-align: center;
+  }
+  main { max-width: 420px; }
+  h1 { font-size: 28px; margin-bottom: 12px; }
+  p  { font-size: 16px; line-height: 1.5; margin-bottom: 16px; }
+  .code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 18px; letter-spacing: 1px;
+    background: #fff; border: 2px solid var(--ink); border-radius: 12px;
+    padding: 12px 16px; margin: 16px 0 24px; word-break: break-all;
+  }
+  a.button {
+    display: inline-block; background: var(--accent); color: #fff;
+    font-weight: 700; font-size: 17px; text-decoration: none;
+    padding: 14px 28px; border-radius: 14px; border: 2px solid var(--ink);
+  }
+  .steps { text-align: left; margin: 24px auto 0; max-width: 320px; font-size: 15px; }
+  .steps li { margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>A friend challenged you to a knot</h1>
+  <p>Untie the exact same knot, then compare times.</p>
+  <div class="code" id="code">…</div>
+  <a class="button" id="store" href="#">Get Knot Fun</a>
+  <ol class="steps">
+    <li>Install Knot Fun from the App Store.</li>
+    <li><strong>Come back and tap your friend's original link again</strong> —
+        the knot will open straight in the game.</li>
+    <li>Link not cooperating? Open it in Safari/Chrome (in-app browsers can
+        block the handoff) and tap it again.</li>
+  </ol>
+</main>
+<script>
+  // The code is the last path segment (/k/KF-3-glowworm-184629); the
+  // directory index serves every /k/<code> URL.
+  var code = decodeURIComponent(location.pathname.split("/").filter(Boolean).pop() || "");
+  if (code) document.getElementById("code").textContent = code;
+
+  // TODO: replace with the live App Store URL.
+  var STORE_URL = "https://apps.apple.com/app/idAPP_STORE_ID";
+  document.getElementById("store").href = STORE_URL;
+
+  // Try the app first (harmless if not installed), then the store.
+  // On a device with the app, the universal link already opened the app
+  // and this page never rendered — this fallback is for app-less visits.
+  setTimeout(function () { window.location = STORE_URL; }, 2500);
+</script>
+</body>
+</html>
