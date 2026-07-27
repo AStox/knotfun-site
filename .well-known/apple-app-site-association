@@ -2,7 +2,7 @@
   "applinks": {
     "details": [
       {
-        "appIDs": ["TEAM_ID.com.stoxbox.knotfun"],
+        "appIDs": ["QHCT6GEGA5.com.stoxbox.knotfun"],
         "components": [
           { "/": "/k/*" }
         ]
