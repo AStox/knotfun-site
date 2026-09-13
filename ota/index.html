@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knot Fun — install</title>
+<style>
+  :root { --ink: #2b2118; --bg: #f6efe3; --accent: #e8623d; }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+    background: var(--bg); color: var(--ink);
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 24px; text-align: center;
+  }
+  main { max-width: 420px; }
+  h1 { font-size: 28px; margin-bottom: 12px; }
+  p  { font-size: 16px; line-height: 1.5; margin-bottom: 16px; }
+  a.button {
+    display: inline-block; background: var(--accent); color: #fff;
+    font-weight: 700; font-size: 17px; text-decoration: none;
+    padding: 14px 28px; border-radius: 14px; border: 2px solid var(--ink);
+  }
+  .meta { font-size: 13px; opacity: 0.7; margin: 16px 0 24px; }
+  .steps { text-align: left; margin: 24px auto 0; max-width: 320px; font-size: 15px; }
+  .steps li { margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Install Knot Fun</h1>
+  <p>Ad Hoc build. Safari only, on a registered device.</p>
+  <p class="meta">com.stoxbox.knotfun · 0.1 (12 Sep 2026)</p>
+  <a class="button" href="itms-services://?action=download-manifest&amp;url=https%3A%2F%2Fknotfun.duckdns.org%2Fota%2Fmanifest.plist">Install on this iPhone</a>
+  <ol class="steps">
+    <li>Open this page in <strong>Safari</strong> (not Chrome, not in-app browsers).</li>
+    <li>Tap install, then confirm. The icon appears on the Home Screen while it downloads (~60&nbsp;MB).</li>
+    <li>If iOS blocks it: Settings → General → VPN &amp; Device Management → Adam Stockermans → Trust.</li>
+  </ol>
+</main>
+</body>
+</html>
