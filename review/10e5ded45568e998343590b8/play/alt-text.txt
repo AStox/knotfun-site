@@ -1,5 +1,5 @@
-icon-512.png: Knot Fun app icon: a glowing yellow knot on a night blue background.
-feature-graphic-1024x500.png: Knot Fun logo and the line untangle at your own pace, beside three interlocked rope rings in gold, teal and coral.
+icon-512.png: Knot Fun app icon: a glowing yellow string in a loose, messy tangle on a night blue background.
+feature-graphic-1024x500.png: Knot Fun logo and the line untangle at your own pace, beside a striped teal string and a coral string tangled together.
 screenshots-phone-1080x1920/01-pace.png: Untangle at your own pace: a striped teal glow worm rope knotted over a dark night forest.
 screenshots-phone-1080x1920/02-notimer.png: No timer, no lives: a gold yarn rope tangled on a grey knit background.
 screenshots-phone-1080x1920/03-themes.png: 18 themes to unlock: glow worm, chrome, Christmas lights and yarn knots shown side by side.
